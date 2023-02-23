@@ -4,12 +4,12 @@ import {useSelector} from 'react-redux';
 import { Link } from 'react-router-dom';
 
 
-const Home = () => {
-    const tables = useSelector(getAllTables);
-
+const Home = (id) => {
+    const tables = useSelector(state => getAllTables(state, id));
+    console.log(tables)
     return (
         <Container>
-            <h1>homePage</h1>
+            <h1>LALALALAALA</h1>
             <h2 className='my-3'>All tables</h2>
             <ListGroup as="ol" numbered>
                 {tables.map(table => (

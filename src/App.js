@@ -12,7 +12,7 @@ import {useEffect} from 'react';
 const App = () => {
 
     const dispatch = useDispatch();
-    useEffect(() => dispatch(fetchTables()), [dispatch]);
+    useEffect(() => dispatch(fetchTables()), );
 
     return (
         <main>
