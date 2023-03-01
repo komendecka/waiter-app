@@ -5,14 +5,17 @@ import TablePage from "./components/pages/TablePage";
 import Error from "./components/pages/Error";
 import Footer from "./components/views/Footer";
 import Header from "./components/views/Header";
-import {fetchTables} from "./redux/tablesRedux";
+import {loadTables} from "./redux/tablesRedux";
 import {useDispatch} from "react-redux";
 import {useEffect} from 'react';
 
 const App = () => {
 
     const dispatch = useDispatch();
-    useEffect(() => dispatch(fetchTables()), );
+    useEffect(() => {
+        dispatch(loadTables());
+    });
+
 
     return (
         <main>

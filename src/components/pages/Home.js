@@ -4,8 +4,8 @@ import {useSelector} from 'react-redux';
 import { Link } from 'react-router-dom';
 
 
-const Home = (id) => {
-    const tables = useSelector(state => getAllTables(state, id));
+const Home = () => {
+    const tables = useSelector(getAllTables);
     console.log(tables)
     return (
         <Container>
