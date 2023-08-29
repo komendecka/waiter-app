@@ -1,3 +1,6 @@
+REACT Restaurant app, for booking tables by waiters.
+Not finished.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
